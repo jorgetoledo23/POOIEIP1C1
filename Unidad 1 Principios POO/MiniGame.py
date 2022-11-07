@@ -2,7 +2,6 @@ from Model.Personaje import Personaje
 
 p1 = Personaje("Player 1", 100, 100, "Fuego", 0)
 p2 = Personaje("Player 2", 100, 100, "Agua", 0)
-
 turno = 1
 
 while True:

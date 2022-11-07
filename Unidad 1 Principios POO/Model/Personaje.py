@@ -44,5 +44,9 @@ class Personaje:
     def TirarHabilidad():
         pass
     
-    def Vender():
-        pass
+    def Vender(self, ItemVendido):
+        self.__Oro += ItemVendido.getCoste() / 2
+        self.__Vida -= ItemVendido.getVida()
+        self.__Fuerza -= ItemVendido.getFuerza()
+        self.__Armadura -= ItemVendido.getArmor()
+        self.__Inventario.remove(ItemVendido)
