@@ -9,7 +9,7 @@ class DAO:
                 password='n4AtcPLJrd',
                 host='sql10.freemysqlhosting.net',
                 database='sql10549760')
-            print("Coneccion Establecida")
+            print("Conexion Establecida")
         except mysql.connector.Error as err:
             if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
                 print("Error de Usuario o Contraseña")
