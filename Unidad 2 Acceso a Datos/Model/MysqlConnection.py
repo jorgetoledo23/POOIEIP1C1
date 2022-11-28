@@ -35,6 +35,8 @@ class DAO:
         cursor.execute(add_item, data_item)
         self.cnx.commit()
 
+
+
     def LeerItems(self):
         cursor = self.cnx.cursor()
         consulta = ("SELECT * FROM Items")
